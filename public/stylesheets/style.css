@@ -13,5 +13,18 @@ a {
 	margin-right: auto;
 	width:30%;
 	height:30%;
-	
 }
+
+#hack-marketing-display{
+	width:900px;
+	display:block-inline;
+	float:left;
+	margin-right: auto;
+}
+
+#lifegraph-brief-description{
+	width:25%;
+	display:block-inline;
+	float:right;
+}
+
