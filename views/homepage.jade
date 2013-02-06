@@ -1,5 +1,19 @@
 extends layout
 
 block content
-	h1 Welcome to Lifegraph!!!!
-	img(src="images/lifegraph-logo.png", id="main-page-logo")
+	img(id="main-page-logo", src="images/lifegraph-logo.png")
+	div.navbar
+		div.navbar-inner
+			div.container
+				a(href='#').brand #{title}
+				ul.nav
+					li.active 
+						a(href='#') Home
+					li  
+						a(href='#') About
+					li  
+						a(href='#') Contact
+
+
+
+
