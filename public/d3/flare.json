@@ -1,0 +1,8 @@
+{
+ "name": "Introduction to OG", "size" : 10000,
+ "children": [
+  { "name" : "Tutorial 1", "size" : 100000 },
+  { "name" : "Tutorial 2", "size" : 100000 },
+  { "name": "Tutorial 3", "size" : 100000 }
+ ]
+}
