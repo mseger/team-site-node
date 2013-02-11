@@ -30,4 +30,20 @@ a {
 	float:right;
 }
 
+/* About page styling */
+
+#about-content{
+	text-align: center;
+}
+#about-blurb{
+	padding-top: 20px;
+	width: 500px;
+	float: left;
+}
+
+#team-marketing-video{
+	width:640px;
+	height:360px;
+}
+
 
