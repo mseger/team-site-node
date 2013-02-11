@@ -7,6 +7,8 @@ var express = require('express')
   , routes = require('./routes')
   , user = require('./routes/user')
   , homepage = require('./routes/homepage')
+  , about = require('./routes/about')
+  , contact = require('./routes/contact')
   , d3test = require('./routes/d3test')
   , http = require('http')
   , path = require('path');
@@ -29,9 +31,15 @@ app.configure('development', function(){
   app.use(express.errorHandler());
 });
 
+// GETS
 app.get('/', homepage.display_welcome);
 app.get('/d3test', d3test.display_test);
 app.get('/users', user.list);
+app.get('/about', about.main);
+app.get('/contact', contact.main);
+
+// PUTS
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));

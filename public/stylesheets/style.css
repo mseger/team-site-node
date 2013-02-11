@@ -7,6 +7,8 @@ a {
   color: #00B7FF;
 }
 
+/* Homepage styling */
+
 #main-page-logo{
 	display: block;
 	margin-left: auto;
@@ -23,8 +25,9 @@ a {
 }
 
 #lifegraph-brief-description{
-	width:25%;
+	width:30%;
 	display:block-inline;
 	float:right;
 }
+
 
