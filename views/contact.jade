@@ -13,3 +13,25 @@ block content
 						a(href='/about') About
 					li.active
 						a(href='/contact') Contact
+
+	div(id="contact-explanation")
+		h2 Contact us!
+		p.lead Whether it's a question, a comment, or a great hack you built with the Lifegraph platform, we'd love to know!
+
+	div.well.span5(id="contact-form")
+		div.row
+			div.span3
+				label Name
+				input(type="text", class="span2", placeholder= "Your Name");
+				label Email
+				input(type="text", class="span2", placeholder= "Your Email Address");
+				label Subject
+				select(id="subject", name="subject", class="span3")
+					option(value="na", selected="") Choose One
+					option(value="service") Suggestion
+					option(value="service") Support Question
+					option(value="service") Submit a Hack Idea
+
+				label Message
+				textarea(name="message", id="message", class="input-xlarge span5", rows="5")
+				input(type="submit", id="feedback-submit-button", class="btn btn-primary pull-right") Send

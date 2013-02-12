@@ -46,4 +46,19 @@ a {
 	height:360px;
 }
 
+/* Contact Page Styling */
+
+#feedback-submit-button{
+	float: left;
+}
+
+#contact-form{
+	padding-left: auto;
+	padding-right: auto;
+}
+
+#contact-explanation{
+	float: right;
+	width: 600px;
+}
 
