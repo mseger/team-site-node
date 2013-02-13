@@ -1,41 +1,52 @@
 extends layout
 
 block content
-	img(id="main-page-logo", src="images/lifegraph-logo.png", style="padding-bottom:10px")
-	div.navbar
-		div.navbar-inner
-			div.container
-				a(href='#').brand Lifegraph Labs
-				ul.nav
+	#header
+		#logo
+			h1
+				a(href='#') Lifegraph Labs
+		#menu
+			ul
+				li
+					a(href='/') Home
+				li.current_page_item
+					a(href='/how-to') How-To's
+				li  
+					a(href='/about') About
+				li  
+					a(href='/contact') Contact
+
+	#page
+		#sidebar
+			#box1
+				h2.title Tutorials
+				ul.style1
 					li
-						a(href='/') Home
-					li.active
-						a(href='/how-to') How-To's
-					li 
-						a(href='/about') About
-					li  
-						a(href='/contact') Contact
+						a(href='#') Button Graph
+					li
+						a(href='#') Entrance
+					li
+						a(href='#') More Advanced Examples
+				
+		#content
+			#cbox1
+				#two-column
+					#lbox3
+						img(src="images/graphbutton_icon.png", alt="", width="200", height="200")
+					#rbox7
+						h2 #1. Button to Open Graph - the basics!
+						b What you'll learn: 
+						br
+						| How to create a circuit that posts an action to your profile on the Open Graph.
+						br
+						br
+						b What you'll need: 
+						li An Electric Imp
+						li An Electric Imp breakout board, or an Arduino + an Electric Imp Shield
+						li A switch or some wire
 
-	div(id="tutorial-list")
+						br
+						input(type="submit", value="Go to How-To", id="tutorial-one-button", class="btn btn-primary pull-right")
 
-		div.span4(id="about-blurb")
-			img(src="images/graphbutton_icon.png", alt="", width="300", height="300")
 
-		div.span8
-			h3 #1. Button to Open Graph - the basics!
-			b What you'll learn: 
-			br
-			| How to create a circuit that posts an action to your profile on the Open Graph.
-			br
-			br
-			b What you'll need: 
-			li An Electric Imp
-			li An Electric Imp breakout board, or an Arduino + an Electric Imp Shield
-			li A switch or some wire
-
-			br
-			input(type="submit", value="Go to How-To", id="tutorial-one-button", class="btn btn-primary pull-right")
-
-		
-
-	script(src='/javascripts/tutorials.js')
+		script(src='/javascripts/tutorials.js')

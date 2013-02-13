@@ -1,38 +1,42 @@
 extends layout
 
 block content
-	img(id="main-page-logo", src="images/lifegraph-logo.png", style="padding-bottom:10px")
-	div.navbar
-		div.navbar-inner
-			div.container
-				a(href='#').brand Lifegraph Labs
-				ul.nav
-					li.active 
-						a(href='/') Home
-					li
-						a(href='/how-to') How-To's
-					li  
-						a(href='/about') About
-					li  
-						a(href='/contact') Contact
+	#header
+		#logo
+			h1
+				a(href='#') Lifegraph Labs
+		#menu
+			ul
+				li.current_page_item
+					a(href='/') Home
+				li
+					a(href='/how-to') How-To's
+				li  
+					a(href='/about') About
+				li  
+					a(href='/contact') Contact
 
-	ul.thumbnails(id="hack-marketing-display")
-		li.span5
-			a(href="http://lifegraphlabs.tumblr.com/post/41299515525/expolive", target="_blank", class="thumbnail")
-				img(src="images/work_in_progress.jpg", alt="")
-		li.span4
-			a(href="#", class="thumbnail")
-				img(src="/images/elephant_device.jpg", alt="")
-		li.span2
-			a(href="#", class="thumbnail")
-				img(src="http://placehold.it/200x95", alt="")
-		li.span2
-			a(href="#", class="thumbnail")
-				img(src="http://placehold.it/200x95", alt="")
-	div(id="lifegraph-brief-description")
-		h2 Welcome to the Future
-		p.lead Introducing the Lifegraph Platform, a platform for developers to persist, record, and share physical interactions on Facebook's Open Graph.
-		p.lead Check out our examples of cool things you can build with the Lifegraph platform! To get started, check out our mini how-to's. 
+	#banner
+		img(src='images/ant_ant_circuits.png', width='1100', height='350', alt='')
+	#page
+		#sidebar
+			#box1
+				h2.title Recent News
+				ul.style1
+					li.first
+						a(href='#') Check out our new tutorial on ButtonGraph!
+					li
+						a(href='http://lifegraphlabs.tumblr.com/') Check out our blog!
+				p
+					a.link-style(href='#') Read More
+		#content
+			#cbox1
+				h2 Welcome to the Future
+				
+				h4 Introducing the Lifegraph Platform, a platform for developers to persist, record, and share physical interactions on Facebook's Open Graph.
+
+				h4 Check out our examples of cool things you can build with the Lifegraph platform! To get started, check out our mini how-to's. 			
+
 
 	// d3 Stuff
 	// link(rel='stylesheet', href='/stylesheets/d3.style2.css')

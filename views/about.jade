@@ -1,27 +1,25 @@
 extends layout
 
 block content
-	img(id="main-page-logo", src="images/lifegraph-logo.png", style="padding-bottom:10px")
-	div.navbar
-		div.navbar-inner
-			div.container
-				a(href='#').brand Lifegraph Labs
-				ul.nav
-					li
-						a(href='/') Home
-					li
-						a(href='/how-to') How-To's
-					li.active  
-						a(href='/about') About
-					li  
-						a(href='/contact') Contact
+	#header
+		#logo
+			h1
+				a(href='#') Lifegraph Labs
+		#menu
+			ul
+				li
+					a(href='/') Home
+				li
+					a(href='/how-to') How-To's
+				li.current_page_item  
+					a(href='/about') About
+				li  
+					a(href='/contact') Contact
 
-	div(id="about-content")
-		div.featurette-thin(id="about-blurb")
-			h1 About Lifegraph Labs
-			p.lead
-				|We’re six engineering students from Olin College in Needham, MA working to enable everyday people to 
-				|build apps to connect their physical and virtual interactions. We are introducing a platform for 
-				|developers to persist, record, and share physical interactions on Facebook's Open Graph.
-
-		iframe(src="https://www.facebook.com/video/embed?video_id=4891615892749", id="team-marketing-video", frameborder="0")
+	#page
+		#two-column
+			#lbox4
+				h1 About Lifegraph Labs
+				h4 We’re six engineering students from Olin College in Needham, MA working to enable everyday people to build apps to connect their physical and virtual interactions. We are introducing a platform for developers to persist, record, and share physical interactions on Facebook's Open Graph.
+			#rbox6
+				iframe(src="https://www.facebook.com/video/embed?video_id=4891615892749", id="team-marketing-video", frameborder="0", width="600px", height="340px")
