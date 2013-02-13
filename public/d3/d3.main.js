@@ -59,6 +59,7 @@ function update() {
       });
 
   // Enter any new nodes.
+
   node.enter().append("svg:circle")
       .attr("class", "node")
       .attr("cx", function(d) { return d.x; })

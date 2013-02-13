@@ -11,10 +11,14 @@ var svg = d3.select("body").append("svg")
 var force = d3.layout.force()
     .gravity(.05)
     .distance(100)
-    .charge(-2000)
+    .charge(-500)
     .size([width *= 2 / 3, height *= 2 / 3]);
 
 d3.json("/d3/graph.json", function(json) {
+
+  json.nodes[0].x = width / 2
+  json.nodes[0].y = height / 2
+  json.nodes[0].fixed = true
 
   force
       .nodes(json.nodes)
@@ -32,6 +36,7 @@ d3.json("/d3/graph.json", function(json) {
       .attr("class", "node")
       .on("click", click)
       .call(force.drag);
+
 
   node.append("image")
       .attr("xlink:href", function(d) { return d.image })

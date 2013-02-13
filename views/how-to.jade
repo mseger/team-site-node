@@ -17,20 +17,25 @@ block content
 						a(href='/contact') Contact
 
 	div(id="tutorial-list")
-		h3 How-to Number 1
-		h4 Posting to the Open Graph- the basics. 
-		b What you'll learn: 
-		br
-		| How to create a circuit that posts an action to your profile on the Open Graph.
-		br
-		br
-		b What you'll need: 
-		li An Electric Imp
-		li An Electric Imp breakout board, or an Arduino + an Electric Imp Shield
-		li A switch or some wire
 
-		br
-		input(type="submit", value="Go to How-To", id="tutorial-one-button", class="btn btn-primary pull-right")
+		div.span4(id="about-blurb")
+			img(src="images/graphbutton_icon.png", alt="", width="300", height="300")
 
+		div.span8
+			h3 #1. Button to Open Graph - the basics!
+			b What you'll learn: 
+			br
+			| How to create a circuit that posts an action to your profile on the Open Graph.
+			br
+			br
+			b What you'll need: 
+			li An Electric Imp
+			li An Electric Imp breakout board, or an Arduino + an Electric Imp Shield
+			li A switch or some wire
+
+			br
+			input(type="submit", value="Go to How-To", id="tutorial-one-button", class="btn btn-primary pull-right")
+
+		
 
 	script(src='/javascripts/tutorials.js')
