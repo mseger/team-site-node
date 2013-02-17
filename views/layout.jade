@@ -11,10 +11,15 @@ html
 		script(href='//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js')
 		script(src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js", type="text/javascript")
 	body
+		div(id="fb-root")
+		script(src='/javascripts/fb-like.js')
+
 		#wrapper.container
 			block content
 			#footer
 				center
-					img(src="images/lifegraph-logo.png", width="100", height="40")
-				p
-					| Copyright (c) 2012 Lifegraph.com.
+					img(src="images/lifegraph-logo.png", width="100", height="40")				
+					p
+						| Copyright (c) 2013 Lifegraph Labs. All Rights Reserved.
+					div(class="fb-like", data-href="http://lifegraphlabs.com", data-send="true", data-width="450", data-show-faces="true", data-font="arial", style="padding-left:150px")
+				
