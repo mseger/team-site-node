@@ -7,23 +7,30 @@ body {
 	padding: 0px;
 	background: #000000;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 13px;
+	font-size: 15px;
 	color: #878787;
 }
 
 h1, h2, h3 {
 	margin: 0px;
 	padding: 0px;
-	text-transform: uppercase;
-	font-family: 'Archivo Narrow', sans-serif;
+	/* text-transform: uppercase; */
+	font-family: 'Open Sans', sans-serif;
 	font-weight: normal;
 	color: #101010;
 }
 
 h2 {
-	padding-bottom: 30px;
-	letter-spacing: -1px;
+	padding-bottom: 10px;
+	/*letter-spacing: -1px;*/
 	font-size: 2em;
+	font-weight: bold;
+}
+
+h3 {
+	/*padding-bottom: 5px;*/
+	/*letter-spacing: -1px;*/
+	font-size: 1.5em;
 }
 
 p, ol, ul {
@@ -248,11 +255,9 @@ hr {
 	overflow: hidden;
 	padding-left: 10px;
 	padding-right: 10px;
+	padding-bottom: 20px;
 }
 
-#two-column h2 {
-	font-size: 1.5em;
-}
 
 #two-column #lbox5 {
 	float: left;
@@ -282,6 +287,16 @@ hr {
 #two-column #rbox7 {
 	float: right;
 	width: 70%;
+}
+
+#two-column #lbox2 {
+	float: left;
+	width: 20%;
+}
+
+#two-column #rbox8 {
+	float: right;
+	width: 80%;
 }
 
 /* Button style 1 */
