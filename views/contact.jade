@@ -4,8 +4,8 @@ block content
 	#header
 		#logo
 			h1
-				//a(href='#') Lifegraph Labs
-				img(src="images/lifegraph-logo.png", width="150", height="60", style="margin-top:-20px")
+				a(href='/')
+					img(src="images/lifegraph-logo.png", width="150", height="60", style="margin-top:-20px")
 		#menu
 			ul
 				li
@@ -19,5 +19,10 @@ block content
 	#page
 		#cbox1
 			h2 Contact us!
-			p.lead Whether it's a question, a comment, or a great hack you built with the Lifegraph platform, we'd love to know!
+			| Whether it's a question, a comment, or a great hack you built with the Lifegraph platform, we'd love to know! Please email us at:
+
+			center(style="padding: 30px;")
+				h3 
+					a.link-style(href="mailto:fb.scope@gmail.com", style="text-decoration: none;") fb.scope@gmail.com
+
 
