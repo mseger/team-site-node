@@ -258,6 +258,10 @@ hr {
 	padding-bottom: 20px;
 }
 
+#two-column #lbox1 {
+	float: left;
+	width: 10%;
+}
 
 #two-column #lbox5 {
 	float: left;
