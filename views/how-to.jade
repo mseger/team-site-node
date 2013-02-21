@@ -25,18 +25,18 @@ block content
 				h2.title Tutorials
 				ul.style1
 					li
-						a(href='#') Button Graph
+						a(href='#buttongraph') Button Graph
 					li
-						a(href='#') Entrance
+						a(href='#entrance') Entrance
 					li
 						a(href='#') More Advanced Examples
 				
 		#content
 			#cbox1
-				#two-column
-					#lbox3
+				.two-column(id="buttongraph")
+					.lbox3
 						img(src="images/graphbutton_icon.png", alt="", width="200", height="200")
-					#rbox7
+					.rbox7
 						h3 #1. Button to Open Graph - the basics!
 						b What you'll learn: 
 						br
@@ -45,20 +45,47 @@ block content
 						br
 						b What you'll need:
 						br
-
-						li An Electric Imp
-						li An Electric Imp breakout board or an Arduino + an Electric Imp Shield
-						li A switch or some wire
-						center
-							a.link-style(href='#', onclick="window.open('https://github.com/lifegraph/graphbutton-imp');", style="text-decoration: none;") Go to How-To
-
-						br
-						b An alternative option:
 						li A WiFly Module
 						li An Arduino + a WiFly Module
 						li A switch or some wire
 						center
-							a.link-style(href='#', onclick="window.open('https://github.com/lifegraph/graphbutton-wifly');", style="text-decoration: none;") Go to How-To							
+							a.link-style(href='#', onclick="window.open('https://github.com/lifegraph/graphbutton-imp');", style="text-decoration: none;") Go to How-To						
 
+						br
+						b Alternatively, you can also use an Electric Imp (soldering required):
+						br
+						li An Electric Imp
+						li An Electric Imp breakout board or an Arduino + an Electric Imp Shield
+						li A switch or some wire
+						li A soldering iron
+						center
+							a.link-style(href='#', onclick="window.open('https://github.com/lifegraph/graphbutton-wifly');", style="text-decoration: none;") Go to How-To
+
+
+				.two-column(id="entrance", style="padding-top: 50px;")
+					.lbox3
+						img(src="images/music.png", alt="", width="200", height="200")
+					.rbox7
+						h3 #2. Entrance Tutorial!
+						b What it is:
+						br
+						| Entrance is a device that passively streams your favorite music with the tap of an RFID-enabled device. It links the unique ID of your RFID device (like Charlie Cards and Clipper Cards) to the Facebook ID of the user, which gives it the ability to find a user’s favorite artists from Facebook and stream them through Tomahawk.
+						br
+						br
+						b What you'll learn: 
+						br
+						| You'll learn how to read RFID cards, communicate between an Arduino and a local Node server, and how to interface with Lifegraph Connect for authentication and device ID storage.
+						br
+						br
+						b What you'll need:
+						br
+						li A Computer
+						li An Internet Connection
+						li An Arduino
+						li Adafruit NFC/RFID Reader Shield (& Header Pins to connect to the Arduino)
+						li An RFID Tag (Any 125kHz RFID card will work)
+						li A Facebook account (that has ‘liked’ bands/music)
+						center
+							a.link-style(href='#', onclick="window.open('https://github.com/lifegraph/entrance-tutorial');", style="text-decoration: none;") Go to How-To
 
 		script(src='/javascripts/tutorials.js')

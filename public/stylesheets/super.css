@@ -230,7 +230,8 @@ hr {
 
 #footer {
 	overflow: hidden;
-	padding: 50px 0px;
+	padding-top: 50px;
+	padding-bottom: 55px;
 	border-top: 1px solid #DEDEDE;
 }
 
@@ -251,54 +252,54 @@ hr {
 
 /** TWO COLUMN */
 
-#two-column {
+.two-column {
 	overflow: hidden;
 	padding-left: 10px;
 	padding-right: 10px;
 	padding-bottom: 20px;
 }
 
-#two-column #lbox1 {
+.two-column .lbox1 {
 	float: left;
 	width: 10%;
 }
 
-#two-column #lbox5 {
+.two-column .lbox5 {
 	float: left;
 	width: 50%;
 }
 
-#two-column #rbox5 {
+.two-column .rbox5 {
 	float: right;
 	width: 50%;
 }
 
-#two-column #lbox4 {
+.two-column .lbox4 {
 	float: left;
 	width: 40%;
 }
 
-#two-column #rbox6 {
+.two-column .rbox6 {
 	float: right;
 	width: 60%;
 }
 
-#two-column #lbox3 {
+.two-column .lbox3 {
 	float: left;
 	width: 30%;
 }
 
-#two-column #rbox7 {
+.two-column .rbox7 {
 	float: right;
 	width: 70%;
 }
 
-#two-column #lbox2 {
+.two-column .lbox2 {
 	float: left;
 	width: 20%;
 }
 
-#two-column #rbox8 {
+.two-column .rbox8 {
 	float: right;
 	width: 80%;
 }
