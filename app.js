@@ -7,6 +7,8 @@ var express = require('express')
   , routes = require('./routes')
   , user = require('./routes/user')
   , homepage = require('./routes/homepage')
+  , ideas = require('./routes/ideas')
+  , tools = require('./routes/tools')
   , hardware = require('./routes/hardware')
   , how_to = require('./routes/how_to')
   , about = require('./routes/about')
@@ -35,7 +37,8 @@ app.configure('development', function(){
 
 // GETS
 app.get('/', homepage.display_welcome);
-app.get('/hardware', hardware.main);
+app.get('/ideas', ideas.main);
+app.get('/tools', tools.main);
 app.get('/d3test', d3test.display_test);
 app.get('/users', user.list);
 app.get('/how-to', how_to.main);
