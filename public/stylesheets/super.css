@@ -11,7 +11,7 @@ body {
 	color: #878787;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
 	margin: 0px;
 	padding: 0px;
 	/* text-transform: uppercase; */
@@ -30,7 +30,13 @@ h2 {
 h3 {
 	/*padding-bottom: 5px;*/
 	/*letter-spacing: -1px;*/
-	font-size: 1.5em;
+	font-size: 1.47em;
+}
+
+h4 {
+	font-size: 1.1em;	
+	color: #878787;
+	padding-bottom: 3px;
 }
 
 p, ol, ul {
@@ -54,6 +60,15 @@ a:hover {
 
 a img {
 	border: none;
+}
+
+a.list {
+	text-decoration: none;
+	font-size: 18px;
+}
+
+a.nostyle {
+	color: #101010;
 }
 
 img.border {
