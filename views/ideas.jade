@@ -37,7 +37,16 @@ block content
 				h3 What will you do with the Lifegraph Platform? Submit your ideas today!
 				center
 					h3 
-						a.link-style(href="#", style="text-decoration: none;") Submit
+						a.link-style(id="open-form", style="text-decoration: none;", href="#") Submit
+
+		div(id="dialog-form", title="Submit Your Ideas Today!")
+			form(style="padding-top: 15px;")
+				input(id="name", type="text", width="100%", placeholder="Your Name")
+				textarea(id="idea", placeholder="What will you do with the Lifegraph Platform?")
+				a.link-style(style="text-decoration: none; color: white; float:right;", href="#") Post
+
+
+		script(type='text/javascript', src='/javascripts/dialog.js');
 
 
 		#content

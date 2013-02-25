@@ -421,3 +421,8 @@ ul.style3 .first {
 	border-top: none;
 }
 
+textarea {
+	resize: none;
+	width: 100%;
+	height: 100px;
+}
