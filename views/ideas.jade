@@ -79,10 +79,9 @@ block content
 			#cbox1
 				h2 What will you build? We'd love to hear your ideas!
 
-				#disqus_thread
-
 			#cbox1
 				#ideas
 					each idea in ideas
-						h2= idea.name
-						div= idea.idea
+						h3= idea.name
+						h4= "\"" + idea.idea + "\""
+
