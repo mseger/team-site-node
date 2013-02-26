@@ -1,5 +1,14 @@
 // hardware display page
 
+var db = require('../controllers/db');
+
 exports.main = function(req, res){
-  res.render('ideas', {title: "Ideas"});
+	db.getIdeas(function(err, ideas) {
+		res.render('ideas', {title: "Ideas", ideas: ideas});
+	});
+};
+
+exports.post = function(req, res){
+	db.saveIdea(req.body);
+	res.send('ok');
 };

@@ -46,7 +46,7 @@ app.get('/about', about.main);
 app.get('/contact', contact.main);
 
 // PUTS
-
+app.post('/ideas/new', ideas.post);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));

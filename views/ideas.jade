@@ -43,7 +43,7 @@ block content
 			form(style="padding-top: 15px;")
 				input(id="name", type="text", width="100%", placeholder="Your Name")
 				textarea(id="idea", placeholder="What will you do with the Lifegraph Platform?")
-				a.link-style(style="text-decoration: none; color: white; float:right;", href="#") Post
+				a.link-style(id="button-idea", style="text-decoration: none; color: white; float:right;", href="#") Post
 
 
 		script(type='text/javascript', src='/javascripts/dialog.js');
@@ -78,3 +78,11 @@ block content
 
 			#cbox1
 				h2 What will you build? We'd love to hear your ideas!
+
+				#disqus_thread
+
+			#cbox1
+				#ideas
+					each idea in ideas
+						h2= idea.name
+						div= idea.idea

@@ -17,3 +17,16 @@ $(".ui-dialog-titlebar").hide()
 
 // Remove Styling for Text Input
 $("#name").accordion({ clearStyle: true });
+
+// Post Button
+$("#button-idea").click(function() {
+	var name = $("#name").val();
+	var idea = $("#idea").val();
+	console.log(name);
+
+	$.post('/ideas/new', {'name': name, 'idea': idea}, function() {
+		$( "#dialog-form" ).dialog( "close" );
+		location.reload(true);
+	});
+});
+
