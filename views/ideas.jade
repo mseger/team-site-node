@@ -41,7 +41,7 @@ block content
 
 		div(id="dialog-form", title="Submit Your Ideas Today!")
 			form(style="padding-top: 15px;")
-				input(id="name", type="text", width="100%", placeholder="Your Name")
+				input(id="name", type="text", width="100%", placeholder="Project Name")
 				textarea(id="idea", placeholder="What will you do with the Lifegraph Platform?")
 				a.link-style(id="button-idea", style="text-decoration: none; color: white; float:right;", href="#") Post
 
@@ -82,6 +82,6 @@ block content
 			#cbox1
 				#ideas
 					each idea in ideas
-						h3= idea.name
-						h4= "\"" + idea.idea + "\""
-
+						.divider
+							h3= idea.name
+							h4= "\"" + idea.idea + "\""
