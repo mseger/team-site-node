@@ -20,6 +20,26 @@ html
 		script(src='/javascripts/utils.js')
 
 		#wrapper.container
+			block header
+				#header
+					#logo
+						h1
+							a(href='/')
+								img(src="images/lifegraph-logo.png", width="150", height="60", style="margin-top:-20px")
+					#menu
+						ul
+							li(class=(highlight=="homepage"?'current_page_item':''))
+								a(href='/') Home
+							li(class=(highlight=="ideas"?'current_page_item':''))
+								a(href='/ideas') Ideas
+							li(class=(highlight=="tools"?'current_page_item':''))
+								a(href='/tools') Tools
+							li(class=(highlight=="how-tos"?'current_page_item':''))
+								a(href='/how-to') How-To's
+							li(class=(highlight=="about"?'current_page_item':''))
+								a(href='/about') About
+							li(class=(highlight=="contact"?'current_page_item':''))
+								a(href='/contact') Contact
 			block content
 			#footer
 				center

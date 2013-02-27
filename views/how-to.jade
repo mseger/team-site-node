@@ -1,26 +1,6 @@
 extends layout
 
 block content
-	#header
-		#logo
-			h1
-				a(href='/')
-					img(src="images/lifegraph-logo.png", width="150", height="60", style="margin-top:-20px")
-		#menu
-			ul
-				li
-					a(href='/') Home
-				li 
-					a(href='/ideas') Ideas
-				li 
-					a(href='/tools') Tools
-				li.current_page_item
-					a(href='/how-to') How-To's
-				li  
-					a(href='/about') About
-				li  
-					a(href='/contact') Contact
-
 	#page
 		#sidebar
 			#box1
@@ -30,8 +10,8 @@ block content
 						a.list(href='#buttongraph') Button Graph
 					li
 						a.list(href='#entrance') Entrance
-					li
-						a.list(href='#') More Advanced Examples
+				//	li
+				//		a.list(href='#') More Advanced Examples
 				
 		#content
 			#cbox1
@@ -51,7 +31,7 @@ block content
 						li An Arduino + a WiFly Module
 						li A switch or some wire
 						center
-							a.link-style(href='javascript:void(0)', onclick="window.open('https://github.com/lifegraph/graphbutton-wifly');", style="text-decoration: none;") Go to How-To						
+							a.link-style(href='javascript:void(0)', onclick="window.open('https://github.com/lifegraph/graphbutton-wifly');", style="text-decoration: none;") Go to Arduino How-To
 
 						br
 						b Alternatively, you can also use an Electric Imp (soldering required):
@@ -61,7 +41,7 @@ block content
 						li A switch or some wire
 						li A soldering iron
 						center
-							a.link-style(href='javascript:void(0)', onclick="window.open('https://github.com/lifegraph/graphbutton-imp');", style="text-decoration: none;") Go to How-To
+							a.link-style(href='javascript:void(0)', onclick="window.open('https://github.com/lifegraph/graphbutton-imp');", style="text-decoration: none;") Go to Electric Imp How-To
 
 				.two-column(id="entrance", style="padding-top: 50px;")
 					.lbox3
