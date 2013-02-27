@@ -433,3 +433,8 @@ textarea {
 	padding-bottom: 10px;
 	border-top: 1px solid #DEDEDE;
 }
+
+
+.toolImg {
+	margin-left:auto; margin-right:auto; padding-top: 10px; padding-bottom: 10px;
+}

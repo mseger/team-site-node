@@ -22,9 +22,68 @@ block content
 					a(href='/contact') Contact
 	#page
 		#cbox1
-			h2 Hardware Tools
-			| Here is the list of the hardware stacks you will need.
+			h2 Hardware Modules
+			div(class="row-fluid")
+				h3 Internet connectivity
+				div(class="span3")
+					h4 
+						a(href="https://www.sparkfun.com/products/10822") WiFly Module ($30)
+					div 
+						a(href="https://www.sparkfun.com/products/10822") 
+							img(src="images/wifly.jpg", height="200", class="toolImg")
+						div We’ve found the Sparkfun WiFly module to be the cheapest and most reliable internet connection device. You just need to hook up the TX, RX, VCC, and GND pins to an Arduino to get it working. 
+				div(class="span3")
+					h4 
+						a(href="https://www.sparkfun.com/products/9954") WiFly Shield ($70)
+					div 
+						a(href="https://www.sparkfun.com/products/9954") 
+							img(src="images/wifly-shield.jpg", height="200", class="toolImg")
+						div If you feel like dropping $25 more for a better form factor and communication via SPI you can pick up the WiFly shield instead.
+				div(class="span3")
+					h4 
+						a(href="https://www.sparkfun.com/products/11395") Electric Imp ($30)
+					div 
+						a(href="https://www.sparkfun.com/products/11395") 
+							img(src="images/eimp.jpg", height="200", class="toolImg")
+						div It looks like a SD card but it's actually a Wifi chip. It needs a <a href="https://www.sparkfun.com/products/11400">breakout board ($12)</a> in order to work with microcontrollers. In order to program it, you'll have to use the company’s online IDE and write some code in squirrel. 
 
-		#cbox1(style="padding-top: 30px; padding-bottom: 30px;")
-			h2 Software Tools
-			| Here is the list of the software libraries we provide.		
+			div(class="row-fluid")
+				h3 Microcontrollers
+				div(class="span3")
+					h4 
+						a(href="https://www.sparkfun.com/products/11021") Arduino Uno ($30)
+					div 
+						a(href="https://www.sparkfun.com/products/11021")
+							img(src="images/uno.jpg", height="200", class="toolImg")
+						div The Arduino Uno is our microcontroller of choice. The Arduino platform has a thriving community which is great when looking for libraries to interact with new hardware. It’s programmed in C/C++.
+				div(class="span3")
+					h4 
+						a(href="http://www.digikey.com/product-detail/en/ATTINY84V-10PU/ATTINY84V-10PU-ND/1245918") ATTiny24/44/84 ($3)
+					div 
+						a(href="http://www.digikey.com/product-detail/en/ATTINY84V-10PU/ATTINY84V-10PU-ND/1245918")
+							img(src="images/attiny.jpg", height="200", class="toolImg")
+						div If having a $30 brain for every project is too expensive, consider just purchasing the microchip itself. ATTinies cousins of the chips used in the Arduinos and can run the same bootloaders. This means you can still take advantage of the Arduino software libraries. 
+
+			div 
+				h3 RFID
+				div(class="span3")
+					h4 
+						a(href="http://www.adafruit.com/products/363") MiFare Fob ($2.50)
+					div 
+						a(href="http://www.adafruit.com/products/363")
+							img(src="images/mifarefob.jpg", height="200", class="toolImg")
+						div MiFare is a widely accepted RFID standard. These fobs come with 1k of storage so that you can have additional information about someone stored on their key tags.
+				div(class="span3")
+					h4 
+						a(href="http://www.adafruit.com/products/789") MiFare Reader ($40)
+					div 
+						a(href="http://www.adafruit.com/products/789")
+							img(src="images/rfidreader.jpg", height="200", class="toolImg")
+						div This is an Arduino shield designed for reading MiFare 13.56MHz RFIDs. Adafruit also has software libraries for this shield that work really well.
+	
+	div(style="margin-top:50px;")
+		#disqus_thread(style="padding-right: 50px;")
+	script(src='/javascripts/disqus.js')
+		//#cbox1(style="padding-top: 30px; padding-bottom: 30px;")
+		//	h2 Software Tools
+		//	| Here is the list of the software libraries we provide.		
