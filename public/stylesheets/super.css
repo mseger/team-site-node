@@ -438,3 +438,11 @@ textarea {
 .toolImg {
 	margin-left:auto; margin-right:auto; padding-top: 10px; padding-bottom: 10px;
 }
+
+.topProject {
+	border-top: solid rgb(255, 163, 111);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 10px;
+	border-bottom: solid rgb(255, 163, 111);
+}
