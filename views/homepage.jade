@@ -5,44 +5,52 @@ block content
 	#banner
 		div#sliderFrame
 			div#slider
-				img(src='/images/slide.png',alt='Introducing the Lifegraph Platform - the Future of Social')
+				img(src='/images/slide.png',alt='Hardware tutorials that talk to the internet')
 				img(src='/images/manufacture_resized.jpg',alt="Persist, record, and share physical interactions on Facebook's Open Graph")
 
-	#page
-		#sidebar
-			#box1
-				h2.title Top Projects
-				div(class="topProject row-fluid")
-					div(class="span4")
-						a(href="https://github.com/lifegraph/graphbutton-wifly")
-							img(src="images/graphbutton_icon.png", alt="", width="100", height="100")
-					div(class="span8") The <a href="https://github.com/lifegraph/graphbutton-wifly">Graph Button</a> is a tutorial on how to connect an action to Facebook
-				div(class="topProject row-fluid")
-					div(class="span4")
-						a(href="https://github.com/lifegraph/entrance-tutorial")
-							img(src="images/music.png", alt="", width="100", height="100")
-					div(class="span8") <a href="https://github.com/lifegraph/entrance-tutorial">Entrance</a> is a project that streams your favorite music at the tap of an RFID card.
-		//		a(class="twitter-timeline", href="https://twitter.com/LifegraphLabs", data-widget-id="302972798412931073")
-		//		| Tweets by @LifegraphLabs
+	//#page
+	//	#sidebar
+	//		#box1
+	//			h2.title Top Projects
+	//			div(class="topProject row-fluid")
+	//				div(class="span4")
+	//					a(href="https://github.com/lifegraph/graphbutton-wifly")
+	//						img(src="images/graphbutton_icon.png", alt="", width="100", height="100")
+	//				div(class="span8") The <a href="https://github.com/lifegraph/graphbutton-wifly">Graph Button</a> is a tutorial on how to connect an action to Facebook
+	//			div(class="topProject row-fluid")
+	//				div(class="span4")
+	//					a(href="https://github.com/lifegraph/entrance-tutorial")
+	//						img(src="images/music.png", alt="", width="100", height="100")
+	//				div(class="span8") <a href="https://github.com/lifegraph/entrance-tutorial">Entrance</a> is a project that streams your favorite music at the tap of an RFID card.
+	//				a(class="twitter-timeline", href="https://twitter.com/LifegraphLabs", data-widget-id="302972798412931073")
+	//				| Tweets by @LifegraphLabs
 
-		#content
-			#cbox1
-				h2 Welcome to the Future of Social
-				h3(style="margin-top: -6px") The Lifegraph platform makes building socially-connected devices a joy. Join the movement!	
-				div(style="padding-top: 25px; padding-bottom: 20px")
-					| We have created the first social physical <=> digital platform for makers and developers of any level of experience to easily build socially-connected physical devices. 
-					| We've chosen to first focus on linking devices to Facebook's Open Graph ecosystem using a set of off-the-shelf hardware built on top of Arduino as the base platform. 	
+	.row-fluid
+		h2(style="text-align:center; padding-top:30px; padding-bottom:30px;") Build devices that talk to the internet
 
+	.row-fluid
+		.span3
+			img(src="images/uno.jpg", class="toolImg")
+			h3 Build on Arduinos
+			div The arduino platform has millions of users and resources available online at Arduino.cc.
+		.span3
+			img(src="images/wifly.jpg", class="toolImg")
+			h3 Connect to the internet
+			div The easiest and best resources to get started on the internet of things.
+		.span3
+			img(src="images/charlie.png", class="toolImg", style="height:250px;")
+			h3 Physical Identity
+			div Take advantage of currently existing systems to have a device that reacts to who is using it.
+		.span3
+			img(src="images/fb.jpg", class="toolImg")
+			h3 Online networks
+			div Leverage your online profiles. Connect to social networks in order to customize experiences and expand your project's reach.
 
-				h2 Get Building with the Lifegraph Platform
-				div(style="padding-top: 25px; padding-bottom: 20px")
-					| Through our how-to's, tutorials, and blog posts about the cool applications we've built with the platform, this site is aimed at giving builders the tools they need to get their own applications up and running in no time.
-					| Check out our 
-					a(href='/tools', style="text-decoration: none") tools 
-					| page to start compiling the materials you'll need to start hacking, and then visit the 
-					a(href='/how-to', style="text-decoration: none") how-to's 
-					| section to get started in earnest. 
+	.row-fluid
+		h3(style="text-align:center; padding-top:30px; padding-bottom:30px;") Lifegraph provides a set of tools and tutorials to help you make real world experiences social.
 
+	.row-fluid(style="text-align:center;")
+		a.link-style(href="/how-to", style="padding: 30px; font-size: 25px;") Get started with a tutorial
 	// d3 Stuff
 	// link(rel='stylesheet', href='/stylesheets/d3.style2.css')
 	// script(type='text/javascript', src='http://d3js.org/d3.v2.min.js')
