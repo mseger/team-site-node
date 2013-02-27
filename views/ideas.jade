@@ -37,17 +37,13 @@ block content
 				h3 What will you do with the Lifegraph Platform? Submit your ideas today!
 				center
 					h3 
-						a.link-style(id="open-form", style="text-decoration: none;", href="#") Submit
+						a.link-style(id="open-form", style="text-decoration: none;", href="javascript:void(0)") Submit
 
 		div(id="dialog-form", title="Submit Your Ideas Today!")
 			form(style="padding-top: 15px;")
 				input(id="name", type="text", width="100%", placeholder="Project Name")
 				textarea(id="idea", placeholder="What will you do with the Lifegraph Platform?")
 				a.link-style(id="button-idea", style="text-decoration: none; color: white; float:right;", href="#") Post
-
-
-		script(type='text/javascript', src='/javascripts/dialog.js');
-
 
 		#content
 			#cbox1
@@ -86,3 +82,6 @@ block content
 							h3= idea.name
 							h4= "\"" + idea.idea + "\""
 					.divider
+				center
+					a.link-style(id="open-form-2", style="text-decoration: none;", href="javascript:void(0)") Submit Your Idea Now!
+	script(type='text/javascript', src='/javascripts/dialog.js');

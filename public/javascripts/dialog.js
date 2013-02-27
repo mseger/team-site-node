@@ -12,6 +12,11 @@ $("#open-form" )
     $( "#dialog-form" ).dialog( "open" );
 });
 
+$("#open-form-2" )
+  .click(function() {
+    $( "#dialog-form" ).dialog( "open" );
+});
+
 // Hide Dialog Titlebar
 $(".ui-dialog-titlebar").hide()     
 
