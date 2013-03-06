@@ -4,7 +4,7 @@ var db = require('../controllers/db');
 
 exports.main = function(req, res){
 	db.getIdeas(function(err, ideas) {
-		res.render('ideas', {title: "Ideas", ideas: ideas, highlight: "ideas"});
+		res.render('projects', {title: "Projects", ideas: ideas, highlight: "ideas"});
 	});
 };
 

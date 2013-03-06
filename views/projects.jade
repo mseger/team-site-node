@@ -1,0 +1,128 @@
+extends layout
+
+block content
+	#page
+		#sidebar
+			#box1
+				h2.title Example Projects
+				ul.style1
+					li
+						a.list(href='#entrance') Music Party
+					li
+						a.list(href='#expolive') Expo Live
+					li
+						a.list(href='#') One More Flagship Idea
+
+
+			#box1(style="padding-top:20px")
+				h3 What will you do with the Lifegraph Platform? Submit your ideas today!
+				center
+					h3 
+						a.link-style(id="open-form", style="text-decoration: none;", href="javascript:void(0)") Submit
+
+		div(id="dialog-form", title="Submit Your Ideas Today!")
+			form(style="padding-top: 15px;")
+				input(id="name", type="text", width="100%", placeholder="Project Name")
+				textarea(id="idea", placeholder="What will you do with the Lifegraph Platform?")
+				a.link-style(id="button-idea", style="text-decoration: none; color: white; margin-top:0px", href="#") Post
+
+		#content
+			#cbox1
+				h2 Check out the cool things that have already been built with Lifegraph!
+				.two-column(id="entrance", style="padding-top:20px;")
+					.lbox3
+						img(src="images/entrance.jpg", width="200", height="200")
+					.rbox7
+						h3
+							a.nostyle(href="http://entrance.launchrock.com/") Music Party
+						h4 Bluetooth speaker that automatically plays user’s favorite music when tagged with RFID card.
+						h4 I need a better catchy phrase.
+				
+				.two-column(id="expolive", style="padding-top:20px;")
+					.lbox3
+						img(src="images/expolive.gif", width="200", height="200")
+					.rbox7
+						h3
+							a.nostyle(href="http://lifegraphlabs.tumblr.com/post/41299515525/expolive") Expo Live
+						h4(style="padding-bottom: 10px") We outfitted Olin's all-students project exposition day with Facebook Open Graph connected devices for a new type of interactive conference experience. 
+					.lbox10(style="color: #000000")
+						| Every semester, Olin Exposition showcases the very best of Franklin W. Olin College students’ work to 
+						| hundreds of guests. Expo is a chance for students and outside participants to make connections 
+						| and see all of the cool projects that Oliners pour hundreds of hours into. 
+						br
+						br
+						| With the goal of increasing engagement between Expo student presenters and visitors viewing their projects, we 
+						| spent 2 months designing, prototyping, and productionizing the system that became ExpoLive. 
+						br
+						br
+						img(src="http://olinexpo.com/assets/expolive-logo.png", style="display: block; margin-left: auto; margin-right: auto;")
+						p(style="padding-bottom: 5 px") Our system: 
+						li(style="padding-bottom: 5px") Digitizes all the projects at Expo so that they can be referred to in the future.
+						li(style="padding-bottom: 5px") Establishes a single list of all projects with contact info to navigate the sea of projects.
+						li(style="padding-bottom: 5px") Enables easy follow-up between presenters and audience members through a seamless tracking system. We want presenters to know every audience member’s name with the lowest amount of effort. The same goes for audience members knowing which presentations they went to.
+						li(style="padding-bottom: 5px") See what projects your friends are visiting through posting projects visited on Facebook in real time.
+						li(style="padding-bottom: 5px") See the most popular projects by having a real time map displaying locations of all participants at Expo in aggregate.
+						li(style="padding-bottom: 20px") Experience new things by enabling new interactions, like walk-up displays
+
+						| The ExpoLive system had to track 100+ projects, ~300 presenters, and ~600 visitors. We wanted something with a seamless form 
+						| factor, and we accomplished that with the Ant Farm.
+						| Every participant wears an Ant, a custom device we made. It uses a nrf24l01+ to do wireless communication and runs off 
+						| of a 3v button cell. Each Ant has a unique ID coupled to its user. The ants were easily slipped into partcipants' plastic name tag holders. 
+
+
+						.three-column(style="display: block; margin-left: auto; margin-right: auto; padding-top: 20px;")
+							.lbox3(style="margin-left: 10px")
+								img(src="images/ant1.jpg", width="250", height="250")
+							.lbox3(style="margin-left:10px")
+								img(src="images/ant2.jpg", width="250", height="250")
+							.lbox3(style="margin-left: 10px")
+								img(src="images/ant3.jpg", width="250", height="250")
+
+						.test(style="clear:both; padding-top:20px;")
+						| Every project has a Colony. Colonies run on the same hardware as Ants but run a slightly different software. 
+						| Each Colony pings out its ID at random time intervals to all the Ants in its vicinity. 
+						br
+						.two-column(style="padding-top: 20px; padding-bottom: 20px")
+							.lbox3
+								img(src="images/antAtProject.jpg", width="250", height="250", style="display: block; margin-left: auto; margin-right: auto;")
+							.lbox3(style="margin-left: 20px")
+								| The Colony inside of a project description card next to the project board and presenter. 
+						
+						| We scattered about 4 Queens throughout the hallways. Queens picked up on signals sent by the Ants and pushed them to our 
+						| servers so that we could display live data.
+
+						.two-column(style="padding-top: 20px; padding-bottom: 20px")
+							.lbox3.offset2(style="text-align: right; padding-right: 20px")
+								| A Queen set up in one of the main Expo hallways full of projects. These were evenly distributed in order to catch 
+								| the signals sent by Ants and push them to our servers, enabling us to display live data. 
+							.lbox3
+								img(src="images/queenInHallway.jpg", width="250", height="250")
+						
+						.two-column(style="padding-bottom: 20px")
+							.lbox3
+								img(src="images/expoLiveRealtime.jpg", width="250")
+							.lbox5(style="margin-left: 20px;")
+								| The results? An awesome display of realtime project attendance, which really drew a crowd. 
+								| The visualization enabled participants and guests to know which projects were popular when, how to avoid the crowds, 
+								| and which projects might have 
+						| In the end, we created 76 Ants and 44 Colonies and had over 1000 visitors to olinexpo.com and data for the 600+ participants.
+						| Afterward, we were able to send out personalized emails to participants, detailing which project presentations they attended
+						| and the student presenters of each. We encouraged them to follow up with students whose projects resonated with them. 
+						br
+						br
+						| To see the full blog post on pulling off ExpoLive, head to the 
+						a(href="http://lifegraphlabs.tumblr.com/", target="_blank") Lifegraph blog!
+
+			#cbox1
+				h2 What will you build? We'd love to hear your ideas!
+
+			#cbox1
+				#ideas
+					each idea in ideas
+						.divider
+							h3= idea.name
+							h4= "\"" + idea.idea + "\""
+					.divider
+				center
+					a.link-style(id="open-form-2", style="text-decoration: none;", href="javascript:void(0)") Submit Your Idea Now!
+	script(type='text/javascript', src='/javascripts/dialog.js');
