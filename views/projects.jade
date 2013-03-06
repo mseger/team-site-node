@@ -35,9 +35,52 @@ block content
 					.rbox7
 						h3
 							a.nostyle(href="http://entrance.launchrock.com/") Music Party
-						h4 Bluetooth speaker that automatically plays user’s favorite music when tagged with RFID card.
-						h4 I need a better catchy phrase.
-				
+						h4(style="padding-bottom: 10px") Bluetooth speaker that automatically plays user’s favorite music when tagged with RFID card.
+					.lbox10(style="color: #000000")
+						| Imagine going on a road trip across the country, walking into a quaint, coffee shop you’ve never been to, tapping a small device and having it 
+						| instantly play your favorite music.  Your friends walk in behind you, tap the device, and the speakers continue to play music at the intersection
+						| at your group’s music taste. We’ve created that experience with Entrance.
+						br
+						br
+						| Music Party is a device that can automatically stream a user’s favorite music over Bluetooth by extracting their favorite artists from Facebook. 
+						br
+						br
+						| All it requires is the tap of an RFID-enabled chip to gain access to the user’s digital identity. 
+						| Many people already carry these chips in the form of prox cards, work badges, or public transportation passes. 
+						br
+						br
+						| Once you tap in, you end up in a Music Party Room, like below: 
+						img(src="images/musicPartyRoomScreenshot.png", style="margin-top: 10px; margin-bottom: -30px")
+						
+						| Music Party is surprisingly easy to make. If you would like an in-depth tutorial about creating an Entrance device, you can find one 
+						a(href="https://github.com/lifegraph/musicparty", target="_blank") here. 
+						br
+						br
+						p(style="padding-bottom: 5px") In terms of hardware, the device itself is composed of: 
+						li(style="padding-bottom: 5px") An arduino. 
+						li(style="padding-bottom: 5px") An Electric Imp, for connecting to the Internet. 
+						li(style="padding-bottom: 5px") RFID reader for capturing the ID of the user's RFID tag. 
+						li(style="padding-bottom: 5px") Extra computer to "listen" for the music
+						li(style="padding-bottom: 20px") Jambox (or any other Bluetooth-enabled speaker, theoretically) for playing the music. 
+
+						| On the software front, we’ve built a custom back-end application, called 
+						a(href="http://connect.lifegraphlabs.com", target="_blank") Lifegraph Connect
+						| , which 
+						| facilitates an easier login process and keeps all the physical to digital identity linkages safe in one database. The Lifegraph Connect platform enables 
+						| anyone to take advantage of a central database of users and removes the need for an application-specific website.  
+						| You can find the API for Lifegraph Connect
+						a(href="https://github.com/lifegraph/node-lifegraph", target="_blank")  here. 
+						br
+						br
+						| Whenever the RFID reader detects the tap of an RFID device, it grabs the ID and sends it to the Entrance server. The Entrance server 
+						| then runs some logic to keep track of the users in a “streaming session”, pulls their favorite artists from Facebook, calculates which songs 
+						| everyone in the room would like, then acquires the streams for those tracks via the libspotify API. 
+						br
+						br
+						| The second endpoint is for streaming. When the Bluetooth-enabled computer hits this endpoint, the server begins piping the track into the HTTP response, 
+						| which the computer then streams over Bluetooth to the Jambox.
+
+
 				.two-column(id="expolive", style="padding-top:20px;")
 					.lbox3
 						img(src="images/expolive.gif", width="200", height="200")
@@ -56,7 +99,7 @@ block content
 						br
 						br
 						img(src="http://olinexpo.com/assets/expolive-logo.png", style="display: block; margin-left: auto; margin-right: auto;")
-						p(style="padding-bottom: 5 px") Our system: 
+						p(style="padding-bottom: 5px") Our system: 
 						li(style="padding-bottom: 5px") Digitizes all the projects at Expo so that they can be referred to in the future.
 						li(style="padding-bottom: 5px") Establishes a single list of all projects with contact info to navigate the sea of projects.
 						li(style="padding-bottom: 5px") Enables easy follow-up between presenters and audience members through a seamless tracking system. We want presenters to know every audience member’s name with the lowest amount of effort. The same goes for audience members knowing which presentations they went to.
