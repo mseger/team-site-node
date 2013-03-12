@@ -26,7 +26,7 @@ block content
 
 		#content
 			#cbox1
-				h1 Cool Projects Built with Lifegraph
+				h2 Cool Projects Built with Lifegraph
 				.two-column(id="entrance", style="padding-top:20px;")
 					.lbox3
 						img(src="images/entrance.jpg", width="200", height="200")
@@ -77,9 +77,11 @@ block content
 						| The second endpoint is for streaming. When the Bluetooth-enabled computer hits this endpoint, the server begins piping the track into the HTTP response, 
 						| which the computer then streams over Bluetooth to the Jambox.
 
-				div(id="SPACER", style="padding-top:30px; padding-bottom:30px")
+				div(id="SPACER", style="padding-top:20px; padding-bottom:20px")
+				.divider
+				div(id="SPACER", style="padding-top:20px; padding-bottom:20px")
 
-				.two-column(id="expolive", style="padding-top:20px;")
+				.two-column(id="expolive")
 					.lbox3
 						img(src="images/expolive.gif", width="200", height="200")
 					.rbox7
@@ -160,8 +162,8 @@ block content
 				#ideas
 					each idea in ideas
 						.divider
-							h3= idea.name
-							h4= "\"" + idea.idea + "\""
+							h3= "\"" + idea.name + "\""
+							h4= idea.idea
 					.divider
 				center
 					a.link-style(id="open-form-2", style="text-decoration: none;", href="javascript:void(0)") Submit Your Idea Now!
