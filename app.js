@@ -7,7 +7,7 @@ var express = require('express')
   , routes = require('./routes')
   , user = require('./routes/user')
   , homepage = require('./routes/homepage')
-  , ideas = require('./routes/ideas')
+  , projects = require('./routes/projects')
   , tools = require('./routes/tools')
   , hardware = require('./routes/hardware')
   , how_to = require('./routes/how_to')
@@ -37,7 +37,7 @@ app.configure('development', function(){
 
 // GETS
 app.get('/', homepage.display_welcome);
-app.get('/ideas', ideas.main);
+app.get('/projects', projects.main);
 app.get('/tools', tools.main);
 app.get('/d3test', d3test.display_test);
 app.get('/users', user.list);
@@ -46,7 +46,7 @@ app.get('/about', about.main);
 app.get('/contact', contact.main);
 
 // PUTS
-app.post('/ideas/new', ideas.post);
+app.post('/ideas/new', projects.post);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
