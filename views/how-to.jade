@@ -9,6 +9,8 @@ block content
 					li
 						a.list(href='#buttongraph') Button Graph
 					li
+						a.list(href='#notificationlight') Notification Light
+					li
 						a.list(href='#entrance') Entrance
 				//	li
 				//		a.list(href='#') More Advanced Examples
@@ -42,12 +44,30 @@ block content
 						li A soldering iron
 						center
 							a.link-style(href='javascript:void(0)', onclick="window.open('https://github.com/lifegraph/graphbutton-imp');", style="text-decoration: none;") Go to Electric Imp How-To
+				
+				.two-column(id="notificationlight")
+					.lbox3
+						img(src="images/notificationlight.jpg", alt="", width="200", height="200")
+					.rbox7
+						h3 #2. Notification light!
+						b What you'll learn: 
+						br
+						| How to pull information from facebook to your arduino.
+						br
+						br
+						b What you'll need:
+						br
+						li A WiFly Module
+						li An Arduino + a WiFly Module
+						li An LED
+						center
+							a.link-style(href='javascript:void(0)', onclick="window.open('https://github.com/lifegraph/notificationlight');", style="text-decoration: none;") Go to Notification Light How-To
 
 				.two-column(id="entrance", style="padding-top: 50px;")
 					.lbox3
 						img(src="images/music.png", alt="", width="200", height="200")
 					.rbox7
-						h3 #2. Entrance Tutorial!
+						h3 #3. Entrance Tutorial!
 						b What it is:
 						br
 						| Entrance is a device that passively streams your favorite music with the tap of an RFID-enabled device. It links the unique ID of your RFID device (like Charlie Cards and Clipper Cards) to the Facebook ID of the user, which gives it the ability to find a user’s favorite artists from Facebook and stream them through Tomahawk.
