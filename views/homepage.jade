@@ -25,10 +25,12 @@ block content
 	//				a(class="twitter-timeline", href="https://twitter.com/LifegraphLabs", data-widget-id="302972798412931073")
 	//				| Tweets by @LifegraphLabs
 
-	.row-fluid
-		h2(style="text-align:center; padding-top:30px; padding-bottom:30px;") Build devices that talk to the internet
 
-	.row-fluid
+	.row-fluid		
+		h2(style="text-align:center; padding-top:30px; padding-bottom:30px;") Build devices that talk to the internet
+		// a.youtube(youtube="hLXrVuHv998", href="#", style="color: #FE801C") Watch Video
+
+	.row-fluid(id="description")
 		.span3
 			img(src="images/uno.jpg", class="toolImg", style="height:255px;")
 			h3 Build on Arduinos
@@ -47,7 +49,10 @@ block content
 			div Leverage your online profiles. Connect to social networks in order to customize experiences and expand your project's reach.
 
 	.row-fluid
-		h3(style="text-align:center; padding-top:30px; padding-bottom:30px;") Lifegraph provides a set of tools and tutorials to help you make real world experiences social.
+		h3(style="text-align:center; padding-top:30px;") Lifegraph provides a set of tools and tutorials to help you make real world experiences social.
+		h3(style="text-align:center; padding-bottom:20px")
+			img.youtube(id="hLXrVuHv998", href="#", src="images/youtube-play.jpg", style="height:25px; padding-right: 5px; padding-bottom: 5px;")
+			a.youtube(youtube="hLXrVuHv998", href="#", style="color: #FE801C") Watch Video
 
 	.row-fluid(style="text-align:center;")
 		a.link-style(href="/how-to", style="padding: 30px; font-size: 25px;") Get started with a tutorial
@@ -55,3 +60,7 @@ block content
 	// link(rel='stylesheet', href='/stylesheets/d3.style2.css')
 	// script(type='text/javascript', src='http://d3js.org/d3.v2.min.js')
 	// script(type='text/javascript', src='/d3/d3.main2.js');
+	script(src='/javascripts/jquery.youtubepopup.min.js')
+	script
+		$("a.youtube").YouTubePopup({ idAttribute: 'youtube' });
+		$("img.youtube").YouTubePopup({ idAttribute: 'id' });
