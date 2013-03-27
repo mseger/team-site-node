@@ -42,6 +42,12 @@ app.get('/tools', tools.main);
 app.get('/d3test', d3test.display_test);
 app.get('/users', user.list);
 app.get('/how-to', how_to.main);
+app.get('/how-to/graphbutton', how_to.graphbutton);
+app.get('/how-to/music-party', how_to.musicparty);
+app.get('/how-to/notification-light', how_to.notificationlight);
+app.get('/how-to/photobooth', how_to.photobooth);
+app.get('/how-to/tagger', how_to.tagger);
+app.get('/how-to/wifi-arduino', how_to.wifiarduino);
 app.get('/about', about.main);
 app.get('/contact', contact.main);
 
