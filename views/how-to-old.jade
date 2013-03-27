@@ -1,0 +1,106 @@
+extends layout
+
+block content
+	#page
+		#sidebar
+			#box1
+				h2.title Tutorials
+				ul.style1
+					li
+						a.list(href='#buttongraph') Button Graph
+					li
+						a.list(href='#notificationlight') Notification Light
+					li
+						a.list(href='#entrance') Music Party
+
+		#content
+			#cbox1
+				.two-column(id="buttongraph")
+					.lbox3
+						img(src="images/graphbutton_icon.png", alt="", width="200", height="200")
+					.rbox7
+						h3 #1. Button to Open Graph - the basics!
+						b What you'll learn: 
+						br
+						| How to create a circuit that posts an action to your profile on the Open Graph.
+						br
+						br
+						b What you'll need:
+						br
+						li A WiFly Module
+						li An Arduino + a WiFly Module
+						li A switch or some wire
+						center
+							a.link-style(href='javascript:void(0)', onclick="window.open('https://github.com/lifegraph/graphbutton-wifly');", style="text-decoration: none;") Go to Arduino How-To
+
+						br
+						b Alternatively, you can also use an Electric Imp (soldering required):
+						br
+						li An Electric Imp
+						li An Electric Imp breakout board or an Arduino + an Electric Imp Shield
+						li A switch or some wire
+						li A soldering iron
+						center
+							a.link-style(href='javascript:void(0)', onclick="window.open('https://github.com/lifegraph/graphbutton-imp');", style="text-decoration: none;") Go to Electric Imp How-To
+				
+				.two-column(id="notificationlight", style="padding-top: 50px;")
+					.lbox3
+						img(src="images/notificationlight.jpg", alt="", width="200", height="200")
+					.rbox7
+						h3 #2. Notification light!
+						b What you'll learn: 
+						br
+						| How to pull information from facebook to your arduino.
+						br
+						br
+						b What you'll need:
+						br
+						li A WiFly Module
+						li An Arduino + a WiFly Module
+						li An LED
+						center
+							a.link-style(href='javascript:void(0)', onclick="window.open('https://github.com/lifegraph/notificationlight');", style="text-decoration: none;") Go to Notification Light How-To
+
+				.two-column(id="entrance", style="padding-top: 50px;")
+					.lbox3
+						img(src="images/music.png", alt="", width="200", height="200")
+					.rbox7
+						h3 #3. Music Party Tutorial!
+						b What it is:
+						br
+						| Music Party is a device that passively streams your favorite music with the tap of an RFID-enabled device. It links the unique ID of your RFID device (like Charlie Cards and Clipper Cards) to the Facebook ID of the user, which gives it the ability to find a user’s favorite artists from Facebook and stream them through Tomahawk.
+						br
+						br
+						b What you'll learn: 
+						br
+						| You'll learn how to read RFID cards, communicate between an Arduino and a local Node server, and how to interface with 
+						a(href="http://lifegraphconnect.com/") Lifegraph Connect
+						|  for authentication and device ID storage.
+						br
+						br
+						b What you'll need:
+						br
+						li A Computer
+						li An Internet Connection
+						li An Arduino
+						li Adafruit NFC/RFID Reader Shield (& Header Pins to connect to the Arduino)
+						li An RFID Tag (Any 125kHz RFID card will work)
+						li A Facebook account (that has ‘liked’ bands/music)
+						center
+							a.link-style(href='javascript:void(0)', onclick="window.open('https://github.com/lifegraph/musicparty');", style="text-decoration: none;") Go to Music Party How-To
+
+			#cbox1
+				h2 What do you think of our tutorials?
+				#disqus_thread(style="padding-right: 50px;")
+		
+		//script(src='/javascripts/disqus.js')
+		//	lst = ["wifi-arduino", "graphbutton", "notification-light", "tagger", "music-party", "photobooth"];
+		//	for (var i = 0; i < lst.length; i++) {
+		//		var element = lst[i];
+		//		$('#' + element).bind('onmouseover', function() {
+		//			$('#' + element).attr("src", "images/diagrams/" + element + "-selected.png");
+		//		});
+		//		$('#' + element).bind('onmouseleave', function() {
+		//			$('#' + element).attr("src", "images/diagrams/" + element + ".png");
+		//		});
+		//	}
