@@ -2,59 +2,66 @@ extends layout
 
 block content
 	#page
-		.row-fluid(id="steps", style="text-align:center; padding-bottom:30px;")
-			.span3(style="border-bottom: thin solid grey;")
-				h2 Step 1
-			.span3(style="border-bottom: thin solid grey;")
-				h2 Step 2
-			.span3(style="border-bottom: thin solid grey;")
-				h2 Step 3
-			.span3(style="border-bottom: thin solid grey;")
-				h2 Step 4										
+		.row-fluid
+			
 
 		.row-fluid(id="description")
-			.span3
-				center
-					a(href="/how-to/wifi-arduino")
-						img(id="wifi-arduino", src="/images/diagrams/wifi-arduino.png", class="toolImg", style="height:200px; width:200px;")
-					h3
-						a(href="/how-to/wifi-arduino") Connect to the Internet
-				div Make your Arduino talk to the Internet and make a POST request.
-			.span3
-				center
-					a(href="/how-to/graphbutton")
-						img(id="graphbutton", src="/images/diagrams/graphbutton.png", class="toolImg", style="height:200px; width:200px;")
-					h3
-						a(href="/how-to/graphbutton") Button to Open Graph
-				div Create a circuit that posts an action to your profile on the Open Graph.
-
-				center
-					a(href="/how-to/notification-light")
-						img(id="notification-light", src="/images/diagrams/notification-light.png", class="toolImg", style="height:200px; width:200px;")
-					h3
-						a(href="/how-to/notification-light") Notification Light
-				div Create a circuit that pulls information from Facebook to your Arduino.
-			.span3
-				center
-					a(href="/how-to/tagger")
-						img(id="tagger", src="/images/diagrams/tagger.png", class="toolImg", style="height:200px; width:200px;")
-					h3
-						a(href="/how-to/tagger") Tap to Open Graph
-				div Tap your RFID card to post an action to your profile on the Open Graph. 
-			.span3
-				center
-					a(href="/how-to/music-party")
-						img(id="music-party", src="/images/diagrams/music-party.png", class="toolImg", style="height:200px; width:200px;")
-					h3
-						a(href="/how-to/music-party") Music Party
-				div Passively streams your favorite music with the tap of an RFID-enabled device.
-
-				center
-					a(href="/how-to/photobooth")
-						img(id="photobooth", src="/images/diagrams/photobooth.png", class="toolImg", style="height:200px; width:200px;")
-					h3
-						a(href="/how-to/photobooth") Photobooth
-				div Takes a photo and posts to your Facebook with the tap of your RFID card.
+			table
+				tr(id="steps", style="text-align:center;")
+					td
+						h2(style="padding-bottom:30px;") Step 1
+					td
+						h2(style="padding-bottom:30px;") Step 2
+					td
+						h2(style="padding-bottom:30px;") Step 3
+					td
+						h2(style="padding-bottom:30px;") Step 4
+				tr
+					td
+						center
+							a(href="/how-to/wifi-arduino")
+								img(id="wifi-arduino", src="/images/diagrams/wifi-arduino.png", class="toolImg", style="height:200px; width:200px;")
+							h3	
+								a(href="/how-to/wifi-arduino") Connect to WiFi
+						div Make your Arduino talk to the Internet and make a POST request.
+					td
+						center
+							a(href="/how-to/graphbutton")
+								img(id="graphbutton", src="/images/diagrams/graphbutton.png", class="toolImg", style="height:200px; width:200px;")
+							h3
+								a(href="/how-to/graphbutton") Button to Open Graph
+						div Create a circuit that posts an action to your profile on the Open Graph.
+					td
+						center
+							a(href="/how-to/tagger")
+								img(id="tagger", src="/images/diagrams/tagger.png", class="toolImg", style="height:200px; width:200px;")
+							h3
+								a(href="/how-to/tagger") Tap to Open Graph
+						div Tap your RFID card to post an action to your profile on the Open Graph. 
+					td
+						center
+							a(href="/how-to/music-party")
+								img(id="music-party", src="/images/diagrams/music-party.png", class="toolImg", style="height:200px; width:200px;")
+							h3
+								a(href="/how-to/music-party") Music Party
+						div Passively streams your favorite music with the tap of an RFID-enabled device.
+				tr
+					td
+					td
+						center
+							a(href="/how-to/notification-light")
+								img(id="notification-light", src="/images/diagrams/notification-light.png", class="toolImg", style="height:200px; width:200px;")
+							h3
+								a(href="/how-to/notification-light") Notification Light
+						div Create a circuit that pulls information from Facebook to your Arduino.
+					td
+					td
+						center
+							a(href="/how-to/photobooth")
+								img(id="photobooth", src="/images/diagrams/photobooth.png", class="toolImg", style="height:200px; width:200px;")
+							h3
+								a(href="/how-to/photobooth") Photobooth
+						div Takes a photo and posts to your Facebook with the tap of your RFID card.
 
 		.row-fluid(style="padding-top:50px; padding-bottom:30px;")
 			h2 What do you think of our tutorials?

@@ -446,3 +446,8 @@ textarea {
 	margin-top: 10px;
 	border-bottom: solid rgb(255, 163, 111);
 }
+
+table { border:none; border-collapse: collapse; }
+table td { border-left: 1px solid #E0E0E0; border-right: 1px solid #E0E0E0; padding-left: 20px; padding-right: 20px }
+table td:first-child { border-left: none; }
+table td:last-child { border-right: none; }
