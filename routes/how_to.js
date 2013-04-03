@@ -3,7 +3,7 @@ exports.main = function (req, res){
 }
 
 exports.wifiarduino = function (req, res){
-	res.redirect("https://github.com/lifegraph/wifly-setup.git");
+	res.redirect("https://github.com/lifegraph/arduino-wifi-setup");
 	//res.render('how-to-wifi-arduino', {title: "Lifegraph Labs", highlight: "how-tos"});
 }
 
